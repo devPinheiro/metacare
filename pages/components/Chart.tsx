@@ -98,8 +98,7 @@ const Chart: React.FC<ChartProps> = ({ data }) => {
           </div>
 
           <div className='flex items-center'>
-            {data && <span
-              className={dynamicClass}></span>}
+            {data && <span className={dynamicClass}></span>}
             <p className='text-xs font-semibold pr-2 border border-1  border-t-0 border-l-0 border-b-0 border-[#ECEBF5]'>
               High Priority
             </p>
@@ -121,13 +120,14 @@ const Chart: React.FC<ChartProps> = ({ data }) => {
             </div>
           </div>
         </div>
+        {data && data.dataset &&
         <Line
           options={options}
           data={data && data.dataset}
-          width='640px'
+          width='740px'
           height='250px'
           title=''
-        />
+        />}
       </div>
       <div className='flex flex-col  border border-1 border-[#ECEBF5] rounded-r-lg p-8 justify-around'>
         <Widget avgResponseTime={data && data.avgResponseTime} />
