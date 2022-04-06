@@ -8,77 +8,77 @@ import Search from './components/Search';
 import SideNavigation from './components/SideNavigation';
 
 const Home: NextPage = () => {
-   const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'];
+  
   const dummyData = [
-  {
-    title: 'Average response Time',
-    avgResponseTime: 1800000,
-    responseTime: 5400000,
-    dataset: {
-    labels,
-    pointStyle: 'circle',
-    datasets: [
-      {
-        label: '',
-        data: [10, 20, 15, 10, 50, 40, 30, 40],
-        borderColor: '#F05D23',
-        backgroundColor: '#ffffff',
+    {
+      title: 'Average response Time',
+      avgResponseTime: 1800000,
+      responseTime: 5400000,
+      dataset: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+        pointStyle: 'circle',
+        datasets: [
+          {
+            label: '',
+            data: [10, 20, 15, 10, 50, 40, 30, 40],
+            borderColor: '#F05D23',
+            backgroundColor: '#ffffff',
+          },
+        ],
       },
-    ],
-  } 
-  },
-  {
-    title: 'Replies per resolution',
-    avgResponseTime: 1800000,
-    responseTime: 5400000,
-     dataset: {
-    labels,
-    pointStyle: 'circle',
-    datasets: [
-      {
-        label: '',
-        data: [10, 20, 15, 10, 50, 40, 30, 40],
-        borderColor: '#3E68FF',
-        backgroundColor: '#ffffff',
+    },
+    {
+      title: 'Replies per resolution',
+      avgResponseTime: 1800000,
+      responseTime: 5400000,
+      dataset: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+        pointStyle: 'circle',
+        datasets: [
+          {
+            label: '',
+            data: [10, 20, 15, 10, 50, 40, 30, 40],
+            borderColor: '#3E68FF',
+            backgroundColor: '#ffffff',
+          },
+        ],
       },
-    ],
-     }
-  },
-  {
-    title: 'Average resolution time',
-    avgResponseTime: 1800000,
-    responseTime: 5400000,
-     dataset: {
-    labels,
-    pointStyle: 'circle',
-    datasets: [
-      {
-        label: '',
-        data: [10, 20, 15, 10, 50, 40, 30, 40],
-        borderColor: '#FB6491',
-        backgroundColor: '#ffffff',
+    },
+    {
+      title: 'Average resolution time',
+      avgResponseTime: 1800000,
+      responseTime: 5400000,
+      dataset: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+        pointStyle: 'circle',
+        datasets: [
+          {
+            label: '',
+            data: [10, 20, 15, 10, 50, 40, 30, 40],
+            borderColor: '#FB6491',
+            backgroundColor: '#ffffff',
+          },
+        ],
       },
-    ],
-  }
-  },
-  {
-    title: 'First contact resolution rate',
-    avgResponseTime: 1800000,
-    responseTime: 5400000,
-     dataset: {
-    labels,
-    pointStyle: 'circle',
-    datasets: [
-      {
-        label: '',
-        data: [10, 20, 15, 10, 50, 40, 30, 40],
-        borderColor: '#07C9E2',
-        backgroundColor: '#ffffff',
+    },
+    {
+      title: 'First contact resolution rate',
+      avgResponseTime: 1800000,
+      responseTime: 5400000,
+      dataset: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+        pointStyle: 'circle',
+        datasets: [
+          {
+            label: '',
+            data: [10, 20, 15, 10, 50, 40, 30, 40],
+            borderColor: '#07C9E2',
+            backgroundColor: '#ffffff',
+          },
+        ],
       },
-    ],
-  }
-  },
-];
+    },
+  ];
 
   return (
     <div className={styles.container}>
