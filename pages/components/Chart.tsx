@@ -18,7 +18,7 @@ import Widget from './Widget';
 interface ChartProps {
   data?: {
     avgResponseTime?: number;
-    dataset?: ChartData<'line', (number | ScatterDataPoint | null)[], unknown>;
+    dataset?: any
     title?: string;
     responseTime?: number;
   };
@@ -79,7 +79,7 @@ const Chart: React.FC<ChartProps> = ({ data }) => {
 
   const dynamicClass = ClassNames({
     [`bg-[${
-      data.dataset.datasets[0].borderColor
+      data && data.dataset.datasets[0].borderColor
     }] rounded-sm h-2 w-2 mr-2`]: true,
   });
 
